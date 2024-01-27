@@ -1,7 +1,8 @@
 # site
 title: Äggie Lee Pak Yee
-url: "https://archive.itchyeggie.com"
-favicon: "/assets/ico.png"
+url: "https://itchyeggie.github.io"
+baseurl: "/doodlin-archive" 
+favicon: "/doodlin-archive/assets/ico.png"
 
 # bio
 header: Äggie Lee Pak Yee
