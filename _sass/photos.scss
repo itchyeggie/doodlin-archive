@@ -1,0 +1,57 @@
+.photos {
+    display: block;
+    width: 100%;
+    padding: 20px 0;
+    overflow: hidden;
+
+    &:first-child {
+        padding-top: 0;
+    }
+
+    &:last-child {
+        border: none;
+    }
+}
+
+.photos__img {
+    float: left;
+    width: 50%;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+    overflow: hidden;
+
+    img {
+        max-width: 90%;
+        max-height: 90%;
+        margin-bottom: 20px;
+        vertical-align: middle;
+    }
+}
+
+// media queries
+@include media-query($on-palm) {
+    .photos__img {
+        width: 10%;
+        height: 80px;
+        line-height: 80px;
+
+        img {
+            max-width: 90%;
+            max-height: 90%;
+            margin-bottom: 0;
+        }
+    }
+}
+
+@include media-query($on-laptop) {
+    .photos {
+        width: 50%;
+    }
+
+    .photos__img {
+        width: 12.5%;
+        height: 55px;
+        line-height: 55px;
+    }
+}

@@ -1,0 +1,16 @@
+# site
+title: Äggie Lee Pak Yee
+url: "https://archive.itchyeggie.com"
+favicon: "/assets/ico.png"
+
+# bio
+header: Äggie Lee Pak Yee
+desc: >
+      李 柏 誼 's doodlin' archive
+
+# build settings
+markdown: kramdown
+# theme: louie
+exclude:
+  - Gemfile
+  - Gemfile.lock
