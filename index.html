@@ -8,11 +8,7 @@ layout: default
   {% for img in post.photos %}
   <div class="photos__img">
     <a href="#{{ img[0] }}">
-      <img
-        src="/assets/ico.png"
-        alt="{{ img[0] }}"
-        data-echo="{{ img[1] }}"
-      />
+      <img src="{{ img[1] | replace: '.jpg', '_small.jpg' }}" alt="{{ img[0] }}" data-echo="{{ img[1] }}" />
     </a>
     <a class="lightbox" id="{{ img[0] }}" href="#_">
       <img src="{{ img[1] }}" alt="{{ img[0] }}" />
